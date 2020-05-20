@@ -8,8 +8,9 @@ User AWS Step Function to define a workflow with 3 "simple" steps:
 - process response
 - HTTP requesto to DHS 2
 
-Stretch goal:
+Stretch goal(s):
 
+1)
 - Ingest data from S3
 - Use AWS Step Function to
     - initiate data ingest on DHS 1
@@ -18,8 +19,9 @@ Stretch goal:
     - process
     - based on the requests, get data from DHS 2
     - put response back into DHS 1
-    
 
+2)
+- Use secrets manager (AWS) to avoid putting credentials into lambda functions
 
 ## Protocol
 
