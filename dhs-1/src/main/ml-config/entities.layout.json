@@ -1,0 +1,16 @@
+{
+  "Customer" : {
+    "x" : 187,
+    "y" : 178,
+    "width" : 465,
+    "height" : 252,
+    "vertices" : { }
+  },
+  "Address" : {
+    "x" : 829,
+    "y" : 203,
+    "width" : 443,
+    "height" : 234,
+    "vertices" : { }
+  }
+}

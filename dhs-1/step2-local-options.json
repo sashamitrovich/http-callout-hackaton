@@ -1,0 +1,4 @@
+{
+    "sourceDatabase": "dhs-1-data-hub-STAGING",
+    "targetDatabase": "dhs-1-data-hub-FINAL"
+}

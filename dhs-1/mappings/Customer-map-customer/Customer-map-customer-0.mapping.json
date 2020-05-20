@@ -1,0 +1,27 @@
+{
+  "lang" : "zxx",
+  "name" : "Customer-map-customer",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://example.org/Customer-0.0.1/Customer",
+  "sourceContext" : "/",
+  "sourceURI" : "/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/data/e4d9bab9-91a8-4fb3-8157-0309b2e6c496.json",
+  "properties" : {
+    "firstName" : {
+      "sourcedFrom" : "first_name"
+    },
+    "lastName" : {
+      "sourcedFrom" : "last_name"
+    },
+    "dateOfBirth" : {
+      "sourcedFrom" : "parseDate(dob,\"DD/MM/YYYY\")"
+    },
+    "id" : {
+      "sourcedFrom" : "id"
+    },
+    "email" : {
+      "sourcedFrom" : "email"
+    }
+  },
+  "namespaces" : { }
+}

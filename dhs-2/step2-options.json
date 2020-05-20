@@ -1,0 +1,4 @@
+{
+    "sourceDatabase": "data-hub-STAGING",
+    "targetDatabase": "data-hub-FINAL"
+}

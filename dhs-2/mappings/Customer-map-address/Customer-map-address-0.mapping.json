@@ -1,0 +1,27 @@
+{
+  "lang" : "zxx",
+  "name" : "Customer-map-address",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://example.org/Address-0.0.1/Address",
+  "sourceContext" : "/",
+  "sourceURI" : "/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/data/550ef084-90c1-4cec-885f-d1bc080e2512.json",
+  "properties" : {
+    "zip" : {
+      "sourcedFrom" : "zipcode"
+    },
+    "country" : {
+      "sourcedFrom" : "country"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "street" : {
+      "sourcedFrom" : "street"
+    },
+    "id" : {
+      "sourcedFrom" : "id"
+    }
+  },
+  "namespaces" : { }
+}
