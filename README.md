@@ -27,7 +27,10 @@ User AWS Step Function to define a workflow with 3 "simple" steps:
     -    Public access
     -    Dev instances
 - Create/access AWS account
-    - AWS step functions?
+    - Create State Machine using AWS StepFunctions
+    - Create 1 Lambda function to GET data from DHS1
+    - Create 1 Lambda function to PUT data to DHS2
+    - Add Lambda URNs to the State Machine definition
 - Diagrams
     - "as-is" state
     - "to-be" state
