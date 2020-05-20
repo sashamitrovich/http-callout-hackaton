@@ -1,6 +1,6 @@
 # http-callout-hackaton
 
-# MVP Goal:
+## MVP Goal:
 
 User AWS Step Function to define a workflow with 3 "simple" steps:
 
@@ -8,7 +8,7 @@ User AWS Step Function to define a workflow with 3 "simple" steps:
 - process response
 - HTTP requesto to DHS 2
 
-Stretch goal:
+### Stretch goal:
 
 - Ingest data from S3
 - Use AWS Step Function to
