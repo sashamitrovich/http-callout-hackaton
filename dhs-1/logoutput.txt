@@ -1,0 +1,144 @@
+Initialized native services in: /Users/smitrovi/.gradle/native
+Found daemon DaemonInfo{pid=22002, address=[bde89c52-e44e-48f1-b082-e3cfe6a89b94 port:61857, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1591097006796, context=DefaultDaemonContext[uid=3190eec6-260a-48e1-a049-096c7c1ab5a4,javaHome=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home,daemonRegistryDir=/Users/smitrovi/.gradle/daemon,pid=22002,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=DE,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home,daemonRegistryDir=/Users/smitrovi/.gradle/daemon,pid=28245,idleTimeout=null,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=DE,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=3190eec6-260a-48e1-a049-096c7c1ab5a4,javaHome=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home,daemonRegistryDir=/Users/smitrovi/.gradle/daemon,pid=22002,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=DE,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 8311). The daemon log file: /Users/smitrovi/.gradle/daemon/5.2.1/daemon-8311.out.log
+Starting 21st build in daemon [uptime: 7 hrs 2 mins 39.971 secs, performance: 100%]
+Using 12 worker leases.
+Starting Build
+Settings evaluated using settings file '/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/settings.gradle'.
+Projects loaded. Root project using build file '/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/build.gradle'.
+Included projects: [root project 'dhs-1']
+
+> Configure project :
+Evaluating root project 'dhs-1' using build file '/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/build.gradle'.
+PropertiesPlugin:apply Loaded 37 properties from /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/gradle.properties
+PropertiesPlugin:apply Loaded 42 properties from /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/gradle-dhs.properties
+PropertiesPlugin:apply Skipping /Users/smitrovi/.gradle/gradle.properties because it does not exist
+PropertiesPlugin:apply Loaded 0 properties from environment variables
+PropertiesPlugin:apply Loaded 0 properties from system properties
+PropertiesPlugin:apply Loaded 1 properties from the command line
+
+Initializing ml-gradle
+Admin interface host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+Admin interface username: dhs-1-admin
+Admin interface scheme: https
+App host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+App services port: 8010
+App Services authentication: basic
+Using protocol 'TLSv1.2' and 'ANY' hostname verifier for authenticating against the App-Services server
+REST admin username: dhs-1-admin
+App Services username: dhs-1-admin
+Module permissions: flowDeveloper,read,flowDeveloper,execute,flowDeveloper,insert,flowDeveloper,update,flowOperator,read,flowOperator,execute,flowOperator,insert,flowOperator,update
+Manage host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+Manage username: dhs-1-admin
+Manage user with security role: dhs-1-admin
+Manage scheme: https
+Use simple SSL for Manage app server: true
+Initializing ManageClient with manage config of: [ManageConfig host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com, port: 8002, username: dhs-1-admin, security username: dhs-1-admin]
+Configuring simple SSL approach for connecting to: https://12dj0oy24.vkunp87wvpv.a.marklogicsvc.com:8002
+Finished initializing ml-gradle
+
+
+Initializing data-hub-gradle
+No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f920840b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'taskScheduler'
+Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'org.springframework.context.annotation.AnnotationConfigApplicationContext@3602c7e5.errorChannel' has 1 subscriber(s).
+started _org.springframework.integration.errorLogger
+App host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+App services port: 8010
+App Services authentication: basic
+Using protocol 'TLSv1.2' and 'ANY' hostname verifier for authenticating against the App-Services server
+REST admin username: dhs-1-admin
+App Services username: dhs-1-admin
+Module permissions: flowDeveloper,read,flowDeveloper,execute,flowDeveloper,insert,flowDeveloper,update,flowOperator,read,flowOperator,execute,flowOperator,insert,flowOperator,update
+Config path: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config
+Config path: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config
+Module paths: [/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-modules]
+Admin interface host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+Admin interface username: dhs-1-admin
+Admin interface scheme: https
+Manage host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com
+Manage username: dhs-1-admin
+Manage user with security role: dhs-1-admin
+Manage scheme: https
+Use simple SSL for Manage app server: true
+Initializing ManageClient with manage config of: [ManageConfig host: 12dj0oy24.vkunp87wvpv.a.marklogicsvc.com, port: 8002, username: dhs-1-admin, security username: dhs-1-admin]
+Configuring simple SSL approach for connecting to: https://12dj0oy24.vkunp87wvpv.a.marklogicsvc.com:8002
+Config path: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config
+Config path: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config
+Module paths: [/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-modules]
+Finished initializing ml-data-hub
+
+All projects evaluated.
+Selected primary task 'mlUpdateIndexes' from project :
+Tasks to be executed: [task ':mlUpdateIndexes']
+:mlUpdateIndexes (Thread[Execution worker for ':',5,main]) started.
+
+> Task :mlUpdateIndexes
+Task ':mlUpdateIndexes' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Deploying app DHF with config dirs: [/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config, /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config]
+
+Executing command [com.marklogic.appdeployer.command.security.DeployProtectedPathsCommand] with sort order [12]
+No resource directory found at: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config/security/protected-paths
+Processing files in directory: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config/security/protected-paths
+Checking to see if Configuration Management API is available at: /manage/v3
+Sending JSON POST request as user 'dhs-1-admin' (who must have the 'manage-admin' and 'security' roles) to path: /manage/v3
+Command supports deployment via CMA, so will submit all resources via a single CMA configuration for directory: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config/security/protected-paths
+Finished executing command [com.marklogic.appdeployer.command.security.DeployProtectedPathsCommand] in 297ms
+
+Deployed app DHF
+Deploying app DHF with config dirs: [/Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config, /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config]
+
+Executing command [com.marklogic.appdeployer.command.databases.DeployOtherDatabasesCommand] with sort order [120]
+Filename staging-triggers-database.json doesn't match includePattern, so ignoring
+Filename staging-schemas-database.json doesn't match includePattern, so ignoring
+Filename final-schemas-database.json doesn't match includePattern, so ignoring
+Filename dhs-1-data-hub-staging-SCHEMAS doesn't match includePattern, so ignoring
+Filename final-triggers-database.json doesn't match includePattern, so ignoring
+Filename modules-database.json doesn't match includePattern, so ignoring
+Processing file: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/ml-config/databases/final-database.json
+Deploying indexes only to a provisioned environment
+Checking for existence of resource: data-hub-FINAL
+Sending XML GET request as user 'dhs-1-admin' to path: /manage/v2/databases
+Found database with name of data-hub-FINAL, so updating at path /manage/v2/databases/data-hub-FINAL/properties
+Sending JSON PUT request as user 'dhs-1-admin' to path: /manage/v2/databases/data-hub-FINAL/properties
+Updated database at /manage/v2/databases/data-hub-FINAL/properties
+Forest creation is disabled, so not creating any forests
+Processing file: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config/databases/staging-database.json
+Deploying indexes only to a provisioned environment
+Checking for existence of resource: data-hub-STAGING
+Sending XML GET request as user 'dhs-1-admin' to path: /manage/v2/databases
+Found database with name of data-hub-STAGING, so updating at path /manage/v2/databases/data-hub-STAGING/properties
+Sending JSON PUT request as user 'dhs-1-admin' to path: /manage/v2/databases/data-hub-STAGING/properties
+Updated database at /manage/v2/databases/data-hub-STAGING/properties
+Forest creation is disabled, so not creating any forests
+Processing file: /Users/smitrovi/MarkLogic/dev/http-callout-hackaton/dhs-1/src/main/hub-internal-config/databases/job-database.json
+Deploying indexes only to a provisioned environment
+Checking for existence of resource: data-hub-JOBS
+Sending XML GET request as user 'dhs-1-admin' to path: /manage/v2/databases
+Found database with name of data-hub-JOBS, so updating at path /manage/v2/databases/data-hub-JOBS/properties
+Sending JSON PUT request as user 'dhs-1-admin' to path: /manage/v2/databases/data-hub-JOBS/properties
+Updated database at /manage/v2/databases/data-hub-JOBS/properties
+Forest creation is disabled, so not creating any forests
+Finished executing command [com.marklogic.appdeployer.command.databases.DeployOtherDatabasesCommand] in 5213ms
+
+Executing command [com.marklogic.hub.deploy.commands.DeployDatabaseFieldCommand] with sort order [121]
+Sending XML GET request as user 'dhs-1-admin' to path: /manage/v2/databases/data-hub-JOBS/properties
+Checking for existence of resource: data-hub-JOBS
+Sending XML GET request as user 'dhs-1-admin' to path: /manage/v2/databases
+Found database with name of data-hub-JOBS, so updating at path /manage/v2/databases/data-hub-JOBS/properties
+Sending XML PUT request as user 'dhs-1-admin' to path: /manage/v2/databases/data-hub-JOBS/properties
+
+> Task :mlUpdateIndexes FAILED
+:mlUpdateIndexes (Thread[Execution worker for ':',5,main]) completed. Took 7.39 secs.
+1 actionable task: 1 executed

@@ -1,0 +1,18 @@
+  
+{
+  "functionName": "getUpdatedDocumentsUris",
+  "params": [
+    {
+      "name": "lastTimestamp",
+      "datatype": "dateTime"
+    },
+    {
+        "name": "collection",
+        "datatype": "string",
+        "nullable": true
+    }
+  ],
+  "return": {
+   "datatype" : "jsonDocument"
+  }
+}

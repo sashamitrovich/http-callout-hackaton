@@ -1,0 +1,1281 @@
+{
+  "pipesFileVersion": 2,
+  "models": [
+    {
+      "label": "Person",
+      "collection": "Person",
+      "source": "Entities",
+      "fields": [
+        {
+          "label": "city",
+          "field": "city",
+          "path": "//city"
+        },
+        {
+          "label": "dob",
+          "field": "dob",
+          "path": "//dob"
+        },
+        {
+          "label": "firstName",
+          "field": "firstName",
+          "path": "//firstName"
+        },
+        {
+          "label": "id",
+          "field": "id",
+          "path": "//id"
+        },
+        {
+          "label": "lastName",
+          "field": "lastName",
+          "path": "//lastName"
+        },
+        {
+          "label": "livesIn",
+          "field": "livesIn",
+          "path": "//livesIn"
+        },
+        {
+          "label": "married",
+          "field": "married",
+          "path": "//married"
+        }
+      ],
+      "options": [
+        "fieldsInputs",
+        "nodeOutput"
+      ]
+    },
+    {
+      "label": "Place",
+      "collection": "Place",
+      "source": "Entities",
+      "fields": [
+        {
+          "label": "country",
+          "field": "country",
+          "path": "//country"
+        },
+        {
+          "label": "id",
+          "field": "id",
+          "path": "//id"
+        },
+        {
+          "label": "name",
+          "field": "name",
+          "path": "//name"
+        },
+        {
+          "label": "population",
+          "field": "population",
+          "path": "//population"
+        }
+      ],
+      "options": [
+        "fieldsInputs",
+        "nodeOutput"
+      ]
+    },
+    {
+      "label": "source",
+      "collection": "source",
+      "source": "Sources",
+      "fields": [
+        {
+          "label": "city [id16]",
+          "field": "city",
+          "value": "city",
+          "path": "/envelope/instance/city",
+          "originalPath": "/envelope/instance/text('city')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "dob [id14]",
+          "field": "dob",
+          "value": "dob",
+          "path": "/envelope/instance/dob",
+          "originalPath": "/envelope/instance/text('dob')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "first_name [id9]",
+          "field": "first_name",
+          "value": "first_name",
+          "path": "/envelope/instance/first_name",
+          "originalPath": "/envelope/instance/text('first_name')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "last_name [id10]",
+          "field": "last_name",
+          "value": "last_name",
+          "path": "/envelope/instance/last_name",
+          "originalPath": "/envelope/instance/text('last_name')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "id [id8]",
+          "field": "id",
+          "value": "id",
+          "path": "/envelope/instance/id",
+          "originalPath": "/envelope/instance/text('id')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        }
+      ],
+      "options": [
+        "nodeInput",
+        "fieldsOutputs"
+      ],
+      "metadata": {
+        "description": "",
+        "dateCreated": "2020-05-05T14:14:48.840Z",
+        "blockCreatedFrom": "custom_step",
+        "sourceDHFStep": {
+          "label": "map-person-place",
+          "value": "map-person-place"
+        },
+        "sourceDatabase": "data-hub-STAGING",
+        "sourceCollection": "people-source",
+        "customURIs": ""
+      }
+    },
+    {
+      "label": "people-place-source",
+      "collection": "people-place-source",
+      "source": "Sources",
+      "fields": [
+        {
+          "label": "city [id16]",
+          "field": "city",
+          "value": "city",
+          "path": "/envelope/instance/city",
+          "originalPath": "/envelope/instance/text('city')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "dob [id14]",
+          "field": "dob",
+          "value": "dob",
+          "path": "/envelope/instance/dob",
+          "originalPath": "/envelope/instance/text('dob')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "first_name [id9]",
+          "field": "first_name",
+          "value": "first_name",
+          "path": "/envelope/instance/first_name",
+          "originalPath": "/envelope/instance/text('first_name')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "last_name [id10]",
+          "field": "last_name",
+          "value": "last_name",
+          "path": "/envelope/instance/last_name",
+          "originalPath": "/envelope/instance/text('last_name')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "id [id8]",
+          "field": "id",
+          "value": "id",
+          "path": "/envelope/instance/id",
+          "originalPath": "/envelope/instance/text('id')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        },
+        {
+          "label": "country [id18]",
+          "field": "country",
+          "value": "country",
+          "path": "/envelope/instance/country",
+          "originalPath": "/envelope/instance/text('country')",
+          "type": 3,
+          "children": [],
+          "parent": "/envelope/instance"
+        }
+      ],
+      "options": [
+        "nodeInput",
+        "fieldsOutputs"
+      ],
+      "metadata": {
+        "description": "",
+        "dateCreated": "2020-05-05T14:24:34.783Z",
+        "blockCreatedFrom": "custom_step",
+        "sourceDHFStep": {
+          "label": "map-person-place",
+          "value": "map-person-place"
+        },
+        "sourceDatabase": "data-hub-STAGING",
+        "sourceCollection": "people-source",
+        "customURIs": ""
+      }
+    }
+  ],
+  "executionGraph": {
+    "last_node_id": 23,
+    "last_link_id": 36,
+    "nodes": [
+      {
+        "id": 3,
+        "type": "DHF/envelope",
+        "pos": [
+          885,
+          222
+        ],
+        "size": [
+          180,
+          160
+        ],
+        "flags": {},
+        "order": 15,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "headers",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "triples",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "instance",
+            "type": 0,
+            "link": 4
+          },
+          {
+            "name": "attachments",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "uri",
+            "type": 0,
+            "link": 7
+          },
+          {
+            "name": "collections",
+            "type": 0,
+            "link": 10
+          }
+        ],
+        "outputs": [
+          {
+            "name": "output",
+            "type": null,
+            "links": [
+              1
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "json"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "Entities/Person",
+        "pos": [
+          439,
+          114
+        ],
+        "size": [
+          305,
+          208
+        ],
+        "flags": {},
+        "order": 13,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "city",
+            "type": 0,
+            "link": 27
+          },
+          {
+            "name": "dob",
+            "type": 0,
+            "link": 19
+          },
+          {
+            "name": "firstName",
+            "type": 0,
+            "link": 30
+          },
+          {
+            "name": "id",
+            "type": 0,
+            "link": 32
+          },
+          {
+            "name": "lastName",
+            "type": 0,
+            "link": 31
+          },
+          {
+            "name": "livesIn",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "married",
+            "type": 0,
+            "link": 23
+          }
+        ],
+        "outputs": [
+          {
+            "name": "Node",
+            "type": "Node",
+            "links": [
+              4
+            ]
+          },
+          {
+            "name": "Prov",
+            "type": null,
+            "links": null
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          true
+        ]
+      },
+      {
+        "id": 10,
+        "type": "Generate/uuid",
+        "pos": [
+          -381,
+          851
+        ],
+        "size": {
+          "0": 255,
+          "1": 58
+        },
+        "flags": {},
+        "order": 0,
+        "mode": 0,
+        "outputs": [
+          {
+            "name": "uuid",
+            "links": [
+              12
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          ""
+        ]
+      },
+      {
+        "id": 4,
+        "type": "DHF/envelope",
+        "pos": [
+          888,
+          551
+        ],
+        "size": [
+          180,
+          160
+        ],
+        "flags": {},
+        "order": 14,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "headers",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "triples",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "instance",
+            "type": 0,
+            "link": 5
+          },
+          {
+            "name": "attachments",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "uri",
+            "type": 0,
+            "link": 14
+          },
+          {
+            "name": "collections",
+            "type": 0,
+            "link": 15
+          }
+        ],
+        "outputs": [
+          {
+            "name": "output",
+            "type": null,
+            "links": [
+              2
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "json"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "Generate/uuid",
+        "pos": [
+          -378,
+          427
+        ],
+        "size": {
+          "0": 255,
+          "1": 58
+        },
+        "flags": {},
+        "order": 3,
+        "mode": 0,
+        "outputs": [
+          {
+            "name": "uuid",
+            "links": [
+              6
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          ""
+        ]
+      },
+      {
+        "id": 19,
+        "type": "Advanced/EvalJavaScript",
+        "pos": [
+          -410,
+          -58
+        ],
+        "size": {
+          "0": 170,
+          "1": 106
+        },
+        "flags": {},
+        "order": 4,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "var1",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var2",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var3",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var4",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var5",
+            "type": 0,
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "output",
+            "links": [
+              23
+            ]
+          }
+        ],
+        "title": "Random boolean",
+        "properties": {
+          "sjsCode": "Math.random() >= 0.5",
+          "editProp": "sjsCode",
+          "editWindowTitle": "Edit JavaScript"
+        }
+      },
+      {
+        "id": 18,
+        "type": "Format/FormatDateAuto",
+        "pos": [
+          -230,
+          96
+        ],
+        "size": {
+          "0": 170,
+          "1": 26
+        },
+        "flags": {},
+        "order": 11,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "inputDate",
+            "type": 0,
+            "link": 29
+          }
+        ],
+        "outputs": [
+          {
+            "name": "IsoDate",
+            "links": [
+              19
+            ]
+          }
+        ],
+        "properties": {}
+      },
+      {
+        "id": 9,
+        "type": "Generate/Templating",
+        "pos": [
+          52,
+          323
+        ],
+        "size": {
+          "0": 255,
+          "1": 146
+        },
+        "flags": {},
+        "order": 8,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "v1",
+            "type": 0,
+            "link": 6
+          },
+          {
+            "name": "v2",
+            "type": 0,
+            "link": 11
+          },
+          {
+            "name": "v3",
+            "type": 0,
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "newString",
+            "links": [
+              7
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "",
+          "",
+          "/${v2}/${v1}.json"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "DHF/output",
+        "pos": [
+          1487,
+          430
+        ],
+        "size": [
+          180,
+          160
+        ],
+        "flags": {},
+        "order": 17,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "output",
+            "type": 0,
+            "link": 3
+          }
+        ],
+        "properties": {}
+      },
+      {
+        "id": 5,
+        "type": "Join/Array",
+        "pos": [
+          1207,
+          411
+        ],
+        "size": {
+          "0": 170,
+          "1": 106
+        },
+        "flags": {},
+        "order": 16,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "item1",
+            "type": 0,
+            "link": 1
+          },
+          {
+            "name": "item2",
+            "type": 0,
+            "link": 2
+          },
+          {
+            "name": "item3",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "item4",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "item5",
+            "type": 0,
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "array",
+            "links": [
+              3
+            ]
+          }
+        ],
+        "properties": {}
+      },
+      {
+        "id": 7,
+        "type": "Entities/Place",
+        "pos": [
+          411,
+          481
+        ],
+        "size": [
+          305,
+          148
+        ],
+        "flags": {},
+        "order": 12,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "country",
+            "type": 0,
+            "link": 34
+          },
+          {
+            "name": "id",
+            "type": 0,
+            "link": 33
+          },
+          {
+            "name": "name",
+            "type": 0,
+            "link": 28
+          },
+          {
+            "name": "population",
+            "type": 0,
+            "link": 36
+          }
+        ],
+        "outputs": [
+          {
+            "name": "Node",
+            "type": "Node",
+            "links": [
+              5
+            ]
+          },
+          {
+            "name": "Prov",
+            "type": null,
+            "links": null
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          true
+        ]
+      },
+      {
+        "id": 14,
+        "type": "Generate/Templating",
+        "pos": [
+          146,
+          763
+        ],
+        "size": {
+          "0": 255,
+          "1": 146
+        },
+        "flags": {},
+        "order": 7,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "v1",
+            "type": 0,
+            "link": 12
+          },
+          {
+            "name": "v2",
+            "type": 0,
+            "link": 13
+          },
+          {
+            "name": "v3",
+            "type": 0,
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "newString",
+            "links": [
+              14
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "",
+          "",
+          "/${v2}/${v1}.json"
+        ]
+      },
+      {
+        "id": 16,
+        "type": "Sources/source",
+        "pos": [
+          -826,
+          151
+        ],
+        "size": [
+          305,
+          168
+        ],
+        "flags": {},
+        "order": 9,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "Node",
+            "type": 0,
+            "link": 16
+          }
+        ],
+        "outputs": [
+          {
+            "name": "city",
+            "links": []
+          },
+          {
+            "name": "dob",
+            "links": []
+          },
+          {
+            "name": "first_name",
+            "links": []
+          },
+          {
+            "name": "last_name",
+            "links": []
+          },
+          {
+            "name": "id",
+            "links": []
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          true
+        ]
+      },
+      {
+        "id": 1,
+        "type": "DHF/input",
+        "pos": [
+          -1089,
+          332
+        ],
+        "size": [
+          180,
+          60
+        ],
+        "flags": {},
+        "order": 5,
+        "mode": 0,
+        "outputs": [
+          {
+            "name": "input",
+            "type": "",
+            "links": [
+              16,
+              26
+            ]
+          },
+          {
+            "name": "uri",
+            "type": "",
+            "links": null
+          },
+          {
+            "name": "collections",
+            "type": "",
+            "links": null
+          }
+        ],
+        "properties": {}
+      },
+      {
+        "id": 21,
+        "type": "Sources/people-place-source",
+        "pos": [
+          -782,
+          399
+        ],
+        "size": [
+          305,
+          188
+        ],
+        "flags": {},
+        "order": 10,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "Node",
+            "type": 0,
+            "link": 26
+          }
+        ],
+        "outputs": [
+          {
+            "name": "city",
+            "links": [
+              27,
+              28
+            ]
+          },
+          {
+            "name": "dob",
+            "links": [
+              29
+            ]
+          },
+          {
+            "name": "first_name",
+            "links": [
+              30
+            ]
+          },
+          {
+            "name": "last_name",
+            "links": [
+              31
+            ]
+          },
+          {
+            "name": "id",
+            "links": [
+              32,
+              33
+            ]
+          },
+          {
+            "name": "country",
+            "links": [
+              34
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          true
+        ]
+      },
+      {
+        "id": 22,
+        "type": "Advanced/EvalJavaScript",
+        "pos": [
+          109,
+          605
+        ],
+        "size": {
+          "0": 170,
+          "1": 106
+        },
+        "flags": {},
+        "order": 6,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "var1",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var2",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var3",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var4",
+            "type": 0,
+            "link": null
+          },
+          {
+            "name": "var5",
+            "type": 0,
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "output",
+            "links": [
+              36
+            ]
+          }
+        ],
+        "title": "Random population",
+        "properties": {
+          "sjsCode": "Math.floor(Math.random() * 100000)",
+          "editProp": "sjsCode",
+          "editWindowTitle": "Edit JavaScript"
+        }
+      },
+      {
+        "id": 12,
+        "type": "Generate/multiConstant",
+        "pos": [
+          -360,
+          568
+        ],
+        "size": {
+          "0": 255,
+          "1": 82
+        },
+        "flags": {},
+        "order": 2,
+        "mode": 0,
+        "outputs": [
+          {
+            "name": "output",
+            "links": [
+              10,
+              11
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "string",
+          "pipes-person"
+        ]
+      },
+      {
+        "id": 15,
+        "type": "Generate/multiConstant",
+        "pos": [
+          -413,
+          716
+        ],
+        "size": {
+          "0": 255,
+          "1": 82
+        },
+        "flags": {},
+        "order": 1,
+        "mode": 0,
+        "outputs": [
+          {
+            "name": "output",
+            "links": [
+              13,
+              15
+            ]
+          }
+        ],
+        "properties": {},
+        "widgets_values": [
+          "string",
+          "pipes-place"
+        ]
+      }
+    ],
+    "links": [
+      [
+        1,
+        3,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        1,
+        0
+      ],
+      [
+        3,
+        5,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        4,
+        6,
+        0,
+        3,
+        2,
+        0
+      ],
+      [
+        5,
+        7,
+        0,
+        4,
+        2,
+        0
+      ],
+      [
+        6,
+        8,
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        7,
+        9,
+        0,
+        3,
+        4,
+        0
+      ],
+      [
+        10,
+        12,
+        0,
+        3,
+        5,
+        0
+      ],
+      [
+        11,
+        12,
+        0,
+        9,
+        1,
+        0
+      ],
+      [
+        12,
+        10,
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        13,
+        15,
+        0,
+        14,
+        1,
+        0
+      ],
+      [
+        14,
+        14,
+        0,
+        4,
+        4,
+        0
+      ],
+      [
+        15,
+        15,
+        0,
+        4,
+        5,
+        0
+      ],
+      [
+        16,
+        1,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        19,
+        18,
+        0,
+        6,
+        1,
+        0
+      ],
+      [
+        23,
+        19,
+        0,
+        6,
+        6,
+        0
+      ],
+      [
+        26,
+        1,
+        0,
+        21,
+        0,
+        0
+      ],
+      [
+        27,
+        21,
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        28,
+        21,
+        0,
+        7,
+        2,
+        0
+      ],
+      [
+        29,
+        21,
+        1,
+        18,
+        0,
+        0
+      ],
+      [
+        30,
+        21,
+        2,
+        6,
+        2,
+        0
+      ],
+      [
+        31,
+        21,
+        3,
+        6,
+        4,
+        0
+      ],
+      [
+        32,
+        21,
+        4,
+        6,
+        3,
+        0
+      ],
+      [
+        33,
+        21,
+        4,
+        7,
+        1,
+        0
+      ],
+      [
+        34,
+        21,
+        5,
+        7,
+        0,
+        0
+      ],
+      [
+        36,
+        22,
+        0,
+        7,
+        3,
+        0
+      ]
+    ],
+    "groups": [],
+    "config": {},
+    "version": 0.4
+  },
+  "name": "person-place",
+  "metadata": {
+    "version": "00.01",
+    "author": "",
+    "title": "person-place",
+    "description": "",
+    "dateExported": "02/06/2020, 14:30:41"
+  }
+}

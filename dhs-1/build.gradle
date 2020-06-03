@@ -8,6 +8,7 @@ plugins {
     id 'java'
     id 'eclipse'
     id 'idea'
+     id 'com.marklogic.ml-development-tools' version '4.1.1'
 
     // This plugin allows you to create different environments
     // for your gradle deploy. Each environment is represented
@@ -30,8 +31,13 @@ repositories {
 dependencies {
     // this allows you to write custom java code that depends
     // on the Data Hub library
+   
     compile 'com.marklogic:marklogic-data-hub:5.1.0'
     compile 'com.marklogic:marklogic-xcc:9.0.7'
+}
+
+task generateDataSync(type: com.marklogic.client.tools.gradle.EndpointProxiesGenTask) {
+    serviceDeclarationFile = 'src/main/ml-modules/root/dataSync/service.json'
 }
 
 

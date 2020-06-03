@@ -1,0 +1,28 @@
+{
+  "lang" : "zxx",
+  "name" : "test-custom",
+  "description" : "",
+  "type" : "CUSTOM",
+  "version" : 1,
+  "options" : {
+    "additionalCollections" : [ ],
+    "sourceQuery" : "cts.collectionQuery([\"customer-source\"])",
+    "targetEntity" : "Customer",
+    "collections" : [ "test-custom", "Customer" ],
+    "sourceDatabase" : "dhs-1-data-hub-STAGING",
+    "permissions" : "rest-reader,read,rest-writer,update",
+    "sourceCollection" : "customer-source",
+    "outputFormat" : "json",
+    "targetDatabase" : "dhs-1-data-hub-FINAL"
+  },
+  "customHook" : {
+    "module" : "",
+    "parameters" : { },
+    "user" : "",
+    "runBefore" : false
+  },
+  "modulePath" : "/custom-modules/custom/test-custom/main.sjs",
+  "retryLimit" : 0,
+  "batchSize" : 100,
+  "threadCount" : 4
+}

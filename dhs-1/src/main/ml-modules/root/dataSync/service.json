@@ -1,0 +1,4 @@
+{
+    "endpointDirectory": "/dataSync/",
+    "$javaClass": "org.marklogic.dhs.DataSync"
+}

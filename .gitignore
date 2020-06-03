@@ -5,6 +5,16 @@ marklogic-pipes-1.1-dev-build-patch-49-g3ffd4d7.3ffd4d7.jar
 .gradle
 /build/
 ~$workflow.pptx
+.classpath
+.gradle
+.tmp
+.pipes/
+bin/
+build/
+/dhs-2/.gradle
+/dhs-1/.gradle
+java/
+*.jar
 
 # Ignore Gradle GUI config
 gradle-app.setting
