@@ -23,7 +23,7 @@ if (collection && collection !== null) {
 }
 
 var response = {}
-response.uris = cts.uris("", null, andQuery)
+response.uris = cts.uris("", null, andQuery).toArray()
 response.dateTime = currentDateTime
 response.collection = collection
 

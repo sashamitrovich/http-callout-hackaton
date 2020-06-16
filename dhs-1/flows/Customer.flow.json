@@ -47,7 +47,7 @@
       "name" : "map-customer",
       "description" : "",
       "options" : {
-        "additionalCollections" : [ ],
+        "additionalCollections" : [ "test" ],
         "sourceQuery" : "cts.collectionQuery([\"customer-source\"])",
         "mapping" : {
           "name" : "Customer-map-customer",
@@ -55,7 +55,7 @@
         },
         "targetEntity" : "Customer",
         "sourceDatabase" : "dhs-1-data-hub-STAGING",
-        "collections" : [ "map-customer", "Customer" ],
+        "collections" : [ "map-customer", "Customer", "test" ],
         "validateEntity" : false,
         "sourceCollection" : "customer-source",
         "outputFormat" : "json",
